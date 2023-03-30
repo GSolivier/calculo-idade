@@ -1,14 +1,10 @@
 ﻿Console.Write($"Digite o seu nome: ");
 string? nome = Console.ReadLine();
 
-Console.Write("Digite o ano de seu nascimento: ");
+Console.Write("Digite o ano de seu nascimento (YYYY): ");
 int datau = int.Parse(Console.ReadLine());
 
-var data = DateTime.Now;
-
-var datas = (data.Year);
-
-int idade = datas - datau;
+int idade = DateTime.Now.Year - datau;
 
 int semana = idade * 52;
 
